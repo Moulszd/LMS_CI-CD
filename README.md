@@ -1,1 +1,6 @@
-# LMS_CI-CD-
+# LMS_CI-CD
+pip3 install virtualenv lms_env
+pip3 install django
+django-admin startproject LMS_project
+
+#Test commit
