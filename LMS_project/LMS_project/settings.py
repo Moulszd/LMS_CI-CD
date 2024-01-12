@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qvm7s@u=z$0o4(=k&x$dkm2_j$1a_16z44vpfx%$1*1=&yzq8i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','0.0.0.0']
 
 
 # Application definition
@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'course',
+<<<<<<< Updated upstream
+=======
+    'mentor',
+    'students',
+>>>>>>> Stashed changes
 ]
 
 MIDDLEWARE = [
