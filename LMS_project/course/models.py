@@ -21,7 +21,7 @@ class Category(BaseModel):
     def __str__(self):
         return self.category_name
 
-
+# subtitle lang
 class Course(BaseModel):
     class Course_type(models.TextChoices):
         recorded = 'REC', _('Recorded Course')
@@ -45,11 +45,11 @@ class Course(BaseModel):
 
     sub_title = models.TextField(max_length=120, blank=False, null=False, default='archived course')
 
-    course_thumb = models.ImageField(upload_to='course_thumbnails')
+    # course_thumb = models.ImageField(upload_to='course_thumbnails')
 
-    course_trailer = models.FileField(upload_to='course_trailer',
-                                      null=True,
-                                      validators=[FileExtensionValidator(allowed_extensions=['MOV','avi','mp4','webm','mkv'])])
+    # course_trailer = models.FileField(upload_to='course_trailer',
+                                    #   null=True,
+                                    #   validators=[FileExtensionValidator(allowed_extensions=['MOV','avi','mp4','webm','mkv'])])
     
     course_category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
