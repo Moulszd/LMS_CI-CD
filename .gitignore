@@ -158,3 +158,15 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+lms.venv/pyvenv.cfg
+.gitignore
+lms.venv/bin/activate
+lms.venv/bin/activate.csh
+lms.venv/bin/activate.fish
+lms.venv/bin/Activate.ps1
+lms.venv/bin/pip
+lms.venv/bin/pip3
+lms.venv/bin/pip3.11
+lms.venv/bin/python
+lms.venv/bin/python3
+lms.venv/bin/python3.11
